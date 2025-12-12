@@ -1,0 +1,8 @@
+a = int(5.5)
+b = str(4)
+c = float(2)
+d = complex(2,3)
+print("The integer value is:", a)
+print("The string value is:", b)
+print("The float value is:", c)
+print("The complex value is:", d)

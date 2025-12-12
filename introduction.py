@@ -1,0 +1,6 @@
+print('My name is Adya Bhardwaj')
+print("My CGPA is 8.47")
+print('''I study in KIIT university''')
+print("I'am a btech csse student")
+print("I want to get placed in  good company")
+print('''hii''')
