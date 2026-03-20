@@ -1,10 +1,21 @@
-import numpy as np
-arr = np.arange(1, 21)
-print("Original Array:")
-print(arr)
-even_numbers = arr[arr % 2 == 0]
-print("\nEven Numbers:")
-print(even_numbers)
-greater_than_10 = arr[arr > 10]
-print("\nNumbers Greater Than 10:")
-print(greater_than_10)
+import sqlite3
+
+# Connect to KIIT database
+conn = sqlite3.connect("KIIT.db")
+
+# Create cursor object
+cursor = conn.cursor()
+
+# Rename table Student to StudentDetails
+cursor.execute("""
+ALTER TABLE Student
+RENAME TO StudentDetails
+""")
+
+# Commit changes
+conn.commit()
+
+print("Table renamed successfully!")
+
+# Close connection
+conn.close()
